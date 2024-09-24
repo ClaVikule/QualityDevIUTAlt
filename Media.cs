@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication1
+﻿namespace QualityDevIUTAlt
 {
     public class Media
     {
@@ -6,9 +6,11 @@
         protected int numeroDeReference;
         protected int nombreExemplairesDisponibles;
 
-        private int AfficherInformations()
+        public virtual void AfficherInfos()
         {
-            throw new System.NotImplementedException();
+            System.Console.WriteLine("Titre: " + titre +
+                "; Numéro de référence: " + numeroDeReference +
+                "; Nombre d'exemplaires disponibles: " + nombreExemplairesDisponibles);
         }
     }
 }
